@@ -18,27 +18,26 @@ $(document).ready(function() {
 	  ];
 
 	  var imageClasses = [
-	  	".1",
-	  	".2",
-	  	".3",
-	  	".4",
-	  	".5",
-	  	".6",
-	  	".7",
-	  	".8",
-	  	".9",
-	  	".10",
-	  	".11",
-	  	".12",
-	  	".13",
-	  	".14"
-	  ]
+	  	"a",
+	  	"b",
+	  	"c",
+	  	"d",
+	  	"e",
+	  	"f",
+	  	"g",
+	  	"h",
+	  	"i",
+	  	"j",
+	  	"k",
+	  	"l",
+	  	"m",
+	  	"n"
+	  ];
 
 	$("button").on("click", function() {
 		var random = Math.floor((Math.random())*quotes.length);
 		$("p").html(quotes[random]);
 		var picture = imageClasses[random];
-		$("#quoteContainer").attr(picture);
-		console.log($("div").attr());
+		$("body").removeClass().addClass(picture);
 	});
 });
